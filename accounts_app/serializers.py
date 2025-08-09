@@ -1,33 +1,43 @@
+# serializers.py
 from rest_framework import serializers
+from .models import User  # keep it relative
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
 
-from .models import User
+class UserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, min_length=8)
 
-class UserSerializer(serializers.Serializer):
-    id= serializers.IntegerField(read_only=True)
-    username = serializers.CharField(max_length=150)
-    first_name = serializers.CharField(max_length=30, required=False, allow_blank=True)
-    last_name = serializers.CharField(max_length=150, required=False, allow_blank=True)
-    email = serializers.EmailField()
-    password = serializers.CharField(write_only=True)
-    birthdate = serializers.DateField(required=False, allow_null=True)
-    nationalid = serializers.IntegerField(required=False, allow_null=True)
-    phonenumber = serializers.CharField(max_length=20)
-    wallet = serializers.DecimalField(max_digits=12, decimal_places=2, required=False,)
+    class Meta:
+        model = User
+        # include only fields you want to accept on create
+        fields = [
+            "username", "email", "password",
+            "first_name", "last_name",
+            "birthdate", "nationalid", "phonenumber"
+        ]
 
     def create(self, validated_data):
-        return User.objects.create(**validated_data)
+        password = validated_data.pop("password")
+        user = User(**validated_data)
+        user.set_password(password)  # hashes the password
+        user.save()
+        return user
 
     def update(self, instance, validated_data):
-        instance.username = validated_data.get('username', instance.username)
-        instance.first_name = validated_data.get('first_name', instance.first_name)
-        instance.last_name = validated_data.get('last_name', instance.last_name)
-        instance.email = validated_data.get('email', instance.email)
-        instance.birthdate = validated_data.get('birthdate', instance.birthdate)
-        instance.nationalid = validated_data.get('nationalid', instance.nationalid)
-        instance.phonenumber = validated_data.get('phonenumber', instance.phonenumber)
-        instance.wallet = validated_data.get('wallet', instance.wallet)
+        # If password is provided, hash and update it
+        password = validated_data.pop("password", None)
+        if password:
+            instance.set_password(password)
+        # Update other fields that were passed in validated_data
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
         instance.save()
         return instance
-    
-    def delete(self,instance):
-        return User.delete(instance)
+        
+
+
+from rest_framework import serializers
+
+class LoginSerializer(serializers.Serializer):
+    username_or_email = serializers.CharField(required=True)
+    password = serializers.CharField(write_only=True, min_length=8,required=True)

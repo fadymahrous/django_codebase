@@ -1,36 +1,83 @@
+from typing import Optional, Tuple
+from django.core.validators import EmailValidator
+from django.core.exceptions import ValidationError
 from accounts_app.models import User
-import re
-from typing import Tuple
-import logging
+from helper.logger_setup import setup_logger
 
-email_regex = re.compile(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
 
-class GetUserObject:
-    def __init__(self):
-        self.user=None
-        self.logger=logging.getLogger('accounts_app')
+logger=setup_logger('accounts_app')
+email_validator = EmailValidator()
 
-    def get_user_object_from_mail(self,mail_provided):
+class UserFetcher:
+    def get_user_by_email(self, email: str) -> Optional[User]:
         try:
-            user=User.objects.get(mail=mail_provided)
-        except Exception as e:
-            print(type(e))
-            self.logger.error(f"Email: {mail_provided} not exist as registerd email, the folowing exception was raised {e}")
+            email_validator(email)
+        except ValidationError:
+            logger.error(f"The Provided email is not valid email format, Email Passed:{email}")
             return None
-        return user
-    
-    def get_user_from_form(self,form)->Tuple[str,str]:
-        username_or_email = form.cleaned_data.get('username_or_email')
-        print(f"---->{username_or_email}")
-        password = form.cleaned_data.get('password')
-        #Check if user Authenticated with email or username
         try:
-            if re.match(email_regex,username_or_email):
-                self.user=User.objects.get(mail=username_or_email)
-            else:
-                self.user=User.objects.get(username=username_or_email)
-        except Exception as e:
-            self.logger.error(f"User: {username_or_email} not exist as registerd email or username, the folowing exception was raised {e}")
-            return None,None
-        #Return username and password
-        return self.user.username,password
+            return User.objects.get(email__iexact=email)
+        except User.DoesNotExist:
+            return None
+        except User.MultipleObjectsReturned:
+            logger.error(f"Multiple users found for email, Email Passed:{email}, | (Should be Unique)")
+            return None
+
+    def get_user_from_form(self, form) -> Tuple[Optional[str], Optional[str]]:
+        """Return (username, password) if the form is valid & user exists, else (None, None).
+        Note: Do not verify password here—use authenticate().
+        """
+        username_or_email = form.cleaned_data.get("username_or_email")
+        password = form.cleaned_data.get("password")
+
+        if not username_or_email or not password:
+            return None, None
+
+        # Resolve user by email or username (case-insensitive)
+        user = None
+        try:
+            try:
+                email_validator(username_or_email)
+                user = User.objects.get(email__iexact=username_or_email)
+            except ValidationError:
+                user = User.objects.get(username__iexact=username_or_email)
+        except User.DoesNotExist:
+            # Generic log to avoid leaking which identifier failed
+            logger.info(f"The user passed not exist, User passed {username_or_email}")
+            return None, None
+        except User.MultipleObjectsReturned:
+            logger.warning("The user passed returned multiple objects, User passed {username_or_email} | (Should be Unique)")
+            return None, None
+
+        # Don’t return the raw password; use authenticate where you handle login
+        return (user.username, password)
+
+
+    def get_user_from_serializer(self, serializer) -> Tuple[Optional[str], Optional[str]]:
+        """Return (username, password) if the form is valid & user exists, else (None, None).
+        Note: Do not verify password here—use authenticate().
+        """
+        username_or_email = serializer.validated_data.get("username_or_email")
+        password = serializer.validated_data.get("password")
+
+        if not username_or_email or not password:
+            return None, None
+
+        # Resolve user by email or username (case-insensitive)
+        user = None
+        try:
+            try:
+                email_validator(username_or_email)
+                user = User.objects.get(email__iexact=username_or_email)
+            except ValidationError:
+                user = User.objects.get(username__iexact=username_or_email)
+        except User.DoesNotExist:
+            # Generic log to avoid leaking which identifier failed
+            logger.info(f"The user passed not exist, User passed {username_or_email}")
+            return None, None
+        except User.MultipleObjectsReturned:
+            logger.warning("The user passed returned multiple objects, User passed {username_or_email} | (Should be Unique)")
+            return None, None
+
+        # Don’t return the raw password; use authenticate where you handle login
+        return (user.username, password)

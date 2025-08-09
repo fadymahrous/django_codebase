@@ -51,7 +51,6 @@ class ConfigurationCenter:
             return None
 
         value = section_data.get(parameter)
-        self.logger.debug(f"Retrieved '{parameter}' from section '{section}': {value}")
         return value
 
     def get_environmental(self,varibale_name):
