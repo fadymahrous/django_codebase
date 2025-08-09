@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block extrajava %}
+<style>
+  body {
+    background-color: #f0f2f5; /* Soft light gray */
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2d3748; /* var(--primary-gray) */
+    margin-bottom: 0.5rem;
+  }
+
+  .header p {
+    font-size: 1.15rem;
+    color: #4a5568; /* var(--text-secondary) */
+    margin: 0;
+  }
+
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e2e8f0;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .form-container:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2d3748;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .form-container table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-collapse: separate;
+    border-spacing: 0 0.75rem;
+  }
+
+  .form-container table tr td:first-child {
+    font-weight: 600;
+    color: #2d3748;
+    padding-right: 1rem;
+    vertical-align: top;
+    width: 35%;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="password"],
+  .form-container select {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .form-container input:focus,
+  .form-container select:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+  }
+
+  .form-container input[type="submit"] {
+    background: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-container input[type="submit"]:hover {
+    background: #3182ce;
+  }
+
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 1.5rem 1rem;
+    }
+
+    .form-container h2 {
+      font-size: 1.5rem;
+    }
+
+    .form-container table tr td:first-child {
+      width: 100%;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .form-container table tr {
+      display: block;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-container table td {
+      display: block;
+      width: 100%;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+  <div class="header">
+    <h1>Join Oasis Today</h1>
+    <p>Create your account to get started</p>
+  </div>
+
+  <div class="form-container">
+    <h2>Create User</h2>
+    <form method="POST">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <input type="submit" value="Create Account">
+    </form>
+  </div>
+{% endblock %}

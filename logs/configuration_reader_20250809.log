@@ -1,0 +1,126 @@
+2025-08-09 00:58:11,610 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 00:58:11,610 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 00:58:11,611 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 00:58:11,611 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 00:58:11,611 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 00:58:11,611 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 00:58:11,611 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 00:58:33,996 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 00:58:33,997 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 00:58:33,997 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 00:58:33,997 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 00:58:33,997 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 00:58:33,997 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 00:58:33,997 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:02:42,133 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:02:42,133 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:02:42,133 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:02:42,133 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:02:42,133 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:02:42,134 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:02:42,134 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:02:47,130 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:02:47,130 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:02:47,130 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:02:47,130 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:02:47,130 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:02:47,130 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:02:47,130 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:06:00,196 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:06:00,198 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:06:00,198 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:06:00,198 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:06:00,198 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:06:00,198 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:06:00,198 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:09:35,705 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:09:35,705 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:09:35,705 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:09:35,705 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:09:35,705 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:09:35,705 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:09:35,705 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:09:44,029 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:09:44,029 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:09:44,029 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:09:44,029 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:09:44,029 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:09:44,029 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:09:44,030 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:10:34,123 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:10:34,123 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:10:34,123 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:10:34,123 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:10:34,123 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:10:34,123 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:10:34,123 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:10:40,183 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:10:40,183 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:10:40,183 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:10:40,183 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:10:40,183 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:10:40,183 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:10:40,183 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:38,378 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:11:38,378 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:38,378 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:38,378 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:38,378 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:38,378 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:38,378 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:45,689 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:11:45,689 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:45,689 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:45,689 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:45,689 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:45,689 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:45,689 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:53,838 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:11:53,838 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:53,838 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:53,838 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:53,838 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:11:53,839 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:11:53,839 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:28,093 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:12:28,093 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:28,093 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:28,093 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:28,093 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:28,093 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:28,093 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:37,375 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:12:37,375 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:37,375 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:37,375 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:37,375 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:37,376 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:37,376 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:44,864 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:12:44,865 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:44,865 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:44,865 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:44,865 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:44,865 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:44,865 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:55,959 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:12:55,959 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:55,960 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:55,960 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:55,960 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:12:55,960 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:12:55,960 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:13:50,306 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 01:13:50,307 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:13:50,307 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:13:50,307 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:13:50,307 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 01:13:50,307 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 01:13:50,307 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 02:04:45,248 - INFO - [configuration] - Configuration loaded from: config\config.ini
+2025-08-09 02:04:45,249 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 02:04:45,249 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 02:04:45,250 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 02:04:45,250 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
+2025-08-09 02:04:45,250 - DEBUG - [configuration] - Retrieved 'database_name' from section 'database_connection': workingspace
+2025-08-09 02:04:45,250 - DEBUG - [configuration] - Retrieved 'host' from section 'database_connection': coworking-identifier.c5e2y0s0keyv.eu-central-1.rds.amazonaws.com
